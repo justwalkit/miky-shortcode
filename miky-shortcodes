@@ -1,0 +1,23 @@
+<?php
+/*
+* Plugin Name: Miky WordPress ShortCode
+* Description: Create your WordPress shortcode.
+* Version: 1.0
+* Author: Miky
+* Author URI: http://miky.nl
+*/
+
+// Example 2 : WP Shortcode to display text on page or post.
+function wp_first_shortcode(){
+    echo "Hello, This is your another shortcode!";
+}
+add_shortcode('first', 'wp_first_shortcode');
+
+function add_miky_plugin_shortcodes( $shortcode_tags )
+{
+    $shortcode_tags['first'] = 'Wp first shortcode';
+
+    return $shortcode_tags;
+}
+
+add_filter('coveloping_shortcode_button', 'add_miky_plugin_shortcodes', 10, 1);
