@@ -1,9 +1,9 @@
 {
-  "name": "pvds/miky-shortcodes",
+  "name": "justwalkit/miky-shortcodes",
   "type": "wordpress-plugin",
   "license": "MIT",
   "description": "Wordpress shortcodes for Miky",
-  "homepage": "https://github.com/pvds/miky-shortcode/",
+  "homepage": "https://github.com/justwalkit/miky-shortcodes/",
   "authors": [
     {
       "name": "Peter van der Steen",
